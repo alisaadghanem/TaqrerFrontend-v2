@@ -1,0 +1,215 @@
+.main-titles {
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+}
+/* Project cards */
+.project-card {
+  background: #fff;
+  border: 1px solid rgba(47, 43, 61, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.project-img {
+  padding: 8px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.project-title, .project-card .project-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2F2B3DE5;
+}
+.project-desc {
+  font-size: 13px;
+  font-weight: 400;
+  color: #2B323D;
+  opacity: .85;
+}
+/* Buttons */
+.btn-outline-primary {
+  font-size: 15px;
+  border: none;
+  background: rgba(39, 118, 255, 0.16);
+  color: #2776FF;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.btn-outline-primary:hover {
+  background: #2776FF;
+  color: white;
+}
+.btn-primary {
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight: 500;
+  background: #2776FF;
+  border: none;
+}
+.btn-primary:hover { background: #1555bb; }
+.btn-outline-secondary {
+  background: rgba(128, 131, 144, 0.16);
+  color: #808390;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.btn-label-primary {
+  background: rgba(39, 118, 255, 0.16);
+  color: #2776FF;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+}
+.btn-label-primary:hover {
+  background: #2776FF;
+  color: #fff;
+}
+.donor-date-picker, .donor-sort {
+  border-radius: 6px;
+  height: 38px;
+  border: 1px solid rgba(47, 43, 61, 0.22);
+  font-size: 15px;
+  min-width: 200px;
+  max-width: 300px;
+}
+.tab-btn {
+  background: rgba(47, 43, 61, 0.08);
+  color: rgba(47, 43, 61, 0.9);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 24px;
+  border: none;
+}
+.tab-btn.active {
+  background: #2776FF;
+  color: #fff;
+}
+.tab-btn-sm, .btn-outline-primary.tab-btn-sm {
+  font-size: 13px !important;
+  padding: 4px 12px !important;
+  height: 28px !important;
+  min-width: 0 !important;
+  border-radius: 6px;
+}
+.action-titles {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2F2B3DE5;
+}
+.donor-filters-bar {
+  width: 100%;
+}
+.donor-search-group {
+  min-width: 240px;
+  max-width: 350px;
+  flex: 1 1 0;
+}
+.donor-search {
+  min-width: 0;
+  width: 100%;
+  flex: 1 1 0;
+  border-radius: 6px;
+  height: 38px;
+  font-size: 15px;
+  border: 1px solid rgba(47, 43, 61, 0.22);
+}
+.donor-filter-btn {
+  height: 38px;
+  padding: 0 18px;
+  font-size: 15px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.filters-full-divider {
+  width: 100%;
+  height: 1px;
+  background: #ececec;
+  margin: 24px 0;
+  border: none;
+  display: block;
+}
+.pagination-wrapper .page-btn {
+  border: none;
+  background: #eee;
+  color: #333;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background 0.2s, color 0.2s;
+}
+.pagination-wrapper .page-btn.active, .pagination-wrapper .page-btn:hover {
+  background: #2776FF;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+     .donor-top-row { 
+    flex-direction: column-reverse !important;
+  }
+  .main-title { font-size: 26px; }
+  .main-desc { font-size: 15px; }
+  .donor-panel { padding: 12px 8px 20px 8px; }
+  .header-area { padding-top: 16px; }
+}
+@media (max-width: 767px) {
+  .donor-top-row { 
+    flex-direction: column-reverse !important;
+  }
+  .header-area, .main-title, .main-desc { 
+    text-align: center !important; 
+    align-items: center !important; 
+    width: 100%;
+  }
+  .project-card { 
+    margin-top: 20px;
+    margin-bottom: 24px; 
+  }
+  .donor-filters-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px;
+    width: 100%;
+  }
+  .donor-search-group {
+    max-width: 100%;
+    width: 100%;
+  }
+  .donor-filter-btn {
+    width: 100%;
+  }
+   .donor-filter-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 18px !important; /* Controls the vertical space between children */
+    margin-bottom: 18px !important;
+  }
+  .donor-filter-row > [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+  .pagination-wrapper {
+    flex-direction: row !important;
+    gap: 8px !important;
+  }
+}

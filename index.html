@@ -1,0 +1,536 @@
+<!doctype html>
+
+<html
+  lang="en"
+  class="layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-skin="default"
+  data-bs-theme="light"
+  data-assets-path="../../assets/"
+  data-template="vertical-menu-template-starter">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Taqrer - تقرير</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon/favicon-96x96.png" />
+    <link rel="manifest" href="../../assets/img/favicon/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../assets/vendor/fonts/iconify-icons.css" />
+
+    <!-- Core CSS -->
+    <!-- build:css assets/vendor/css/theme.css  -->
+
+    <link rel="stylesheet" href="../../assets/vendor/libs/node-waves/node-waves.css" />
+
+    <link rel="stylesheet" href="../../assets/vendor/libs/pickr/pickr-themes.css" />
+
+    <link rel="stylesheet" href="../../assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="../../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+
+    <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="roles/charity/profile-completion/styles.css" />
+    <link rel="stylesheet" href="roles/charity/projects/create-projects/styles.css" />
+    <link rel="stylesheet" href="roles/charity/projects/edit-projects/styles.css" />
+    <link rel="stylesheet" href="roles/charity/projects/active-projects/styles.css" />
+    <link rel="stylesheet" href="roles/charity/projects/draft-projects/styles.css" />
+    <link rel="stylesheet" href="roles/charity/projects/view-projects/styles.css" />
+
+    <link rel="stylesheet" href="roles/donor/profile-completion/styles.css" />
+    <link rel="stylesheet" href="roles/donor/projects/view-projects/styles.css" />
+    <link rel="stylesheet" href="roles/donor/projects/discover-projects/styles.css" />
+
+    <!-- endbuild -->
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../../assets/vendor/js/template-customizer.js"></script>
+
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+
+    <script src="../../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <span class="text-primary">
+                  <svg width="89" height="24" viewBox="0 0 89 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M80.7003 3.47829L80.1948 4.74966C79.2969 7.00543 77.2397 8.71169 74.887 9.2442C72.7123 1.91034 68.4592 0.150097 65.1854 0.00994301C57.251 -0.334709 48.2012 8.51347 45.4477 16.6509L45.0376 17.8601L59.3496 23.6934L59.8558 22.4227C62.0129 17.0033 67.196 13.0531 72.9519 12.2655C74.2547 15.9646 76.715 16.6849 78.1583 16.7467C78.2396 16.75 78.3214 16.7515 78.4031 16.7515C82.6044 16.7515 87.2165 12.2314 88.6007 8.06602L89.0001 6.86084L80.7003 3.47829ZM65.0696 2.72094C68.3775 2.86257 70.7608 5.17382 72.1653 9.59661C71.9697 9.62842 71.7811 9.68944 71.587 9.72753C71.2623 9.79002 70.9431 9.86472 70.6233 9.94497C70.1192 10.0711 69.6237 10.2182 69.1326 10.3854C68.8227 10.4904 68.5154 10.5947 68.2114 10.7156C67.7096 10.9153 67.223 11.1446 66.7396 11.385C66.4715 11.5185 66.199 11.6401 65.9372 11.7855C65.3684 12.1016 64.8237 12.4552 64.289 12.8253C64.1355 12.9311 63.9724 13.0206 63.8219 13.1304C63.1507 13.6234 62.5125 14.1599 61.9082 14.7331C61.7377 14.8947 61.5891 15.0756 61.4249 15.2431C61.0026 15.6728 60.5917 16.111 60.2112 16.5777C60.0148 16.8192 59.8392 17.0743 59.6543 17.325C59.3403 17.7511 59.0386 18.1834 58.7616 18.6352C58.5878 18.9181 58.4284 19.207 58.2698 19.4991C58.1474 19.725 58.002 19.9366 57.8889 20.1677L48.4682 16.3277C51.4984 9.05708 59.3791 2.49092 65.0696 2.72094ZM78.2737 14.0357C77.1373 13.9872 76.2657 13.2532 75.6699 11.8483C78.3561 11.1801 80.7395 9.38953 82.1196 6.98657L85.5365 8.37961C84.0015 11.4319 80.6537 14.113 78.2737 14.0357Z"
+                      fill="#2776FF" />
+                    <path
+                      d="M12.2645 3.5111C12.2645 3.31363 12.1129 3.15351 11.9254 3.15351C11.7379 3.15351 11.5856 3.31363 11.5856 3.5111V5.87079C11.5856 6.8282 10.8467 7.60663 9.9385 7.60663H7.84839H6.12513H5.08119C4.17296 7.60663 3.4341 6.8282 3.4341 5.87079V3.5111C3.4341 3.31363 3.28174 3.15351 3.09426 3.15351C2.93043 3.15351 2.79324 3.27628 2.76181 3.43936C2.75737 3.46266 2.75478 3.4867 2.75478 3.51147V8.15911C2.75478 9.3225 1.85691 10.2688 0.752317 10.2688C0.565199 10.2688 0.412842 10.4289 0.412842 10.6264C0.412842 10.8243 0.565199 10.9844 0.752317 10.9844C2.23114 10.9844 3.4341 9.71707 3.4341 8.15911V7.5996C3.8553 8.04558 4.43811 8.32182 5.08119 8.32182H6.12513H7.84839H9.9385C11.221 8.32182 12.2645 7.22241 12.2645 5.87079V3.5111Z"
+                      fill="#222222" />
+                    <path
+                      d="M24.3887 5.52504C24.3887 4.37755 25.2748 3.44418 26.3638 3.44418C27.4529 3.44418 28.3389 4.37755 28.3389 5.52504C28.3389 6.67289 27.4529 7.60627 26.3638 7.60627C25.2748 7.60627 24.3887 6.67289 24.3887 5.52504ZM12.973 10.9836C14.4518 10.9836 15.6544 9.71671 15.6544 8.15838V7.59924C16.076 8.04522 16.6588 8.32183 17.3019 8.32183H26.8693C26.9322 8.32183 26.9906 8.3026 27.0409 8.27117C27.0916 8.3026 27.1496 8.32183 27.2129 8.32183H32.3339C33.6167 8.32183 34.6603 7.22205 34.6603 5.8708V3.51074C34.6603 3.31364 34.5079 3.15315 34.3204 3.15315C34.1329 3.15315 33.9809 3.31364 33.9809 3.51074V5.8708C33.9809 6.82784 33.2421 7.60627 32.3339 7.60627H28.1307C28.674 7.09373 29.0182 6.35191 29.0182 5.52504C29.0182 3.98335 27.8275 2.72862 26.3638 2.72862C24.9005 2.72862 23.7098 3.98335 23.7098 5.52504C23.7098 6.35191 24.0541 7.09373 24.5973 7.60627H17.3019C16.3937 7.60627 15.6548 6.82784 15.6548 5.8708V3.51074C15.6548 3.31364 15.5024 3.15315 15.315 3.15315C15.1275 3.15315 14.9755 3.31364 14.9755 3.51074V5.8708V8.15838C14.9755 9.32214 14.0772 10.2685 12.973 10.2685C12.7859 10.2685 12.6335 10.4286 12.6335 10.626C12.6335 10.8239 12.7859 10.9836 12.973 10.9836Z"
+                      fill="#222222" />
+                    <path
+                      d="M31.5541 0.757568H33.9315C34.119 0.757568 34.2714 0.597445 34.2714 0.399973C34.2714 0.20213 34.119 0.042007 33.9315 0.042007H31.5541C31.3666 0.042007 31.2146 0.20213 31.2146 0.399973C31.2146 0.597445 31.3666 0.757568 31.5541 0.757568Z"
+                      fill="#222222" />
+                    <path
+                      d="M25.1752 0.757568H27.553C27.7405 0.757568 27.8925 0.597445 27.8925 0.399973C27.8925 0.20213 27.7405 0.042007 27.553 0.042007H25.1752C24.9877 0.042007 24.8357 0.20213 24.8357 0.399973C24.8357 0.597445 24.9877 0.757568 25.1752 0.757568Z"
+                      fill="#222222" />
+                    <path
+                      d="M9.03686 10.9316C9.22435 10.9316 9.37634 10.7715 9.37634 10.574C9.37634 10.3766 9.22435 10.2161 9.03686 10.2161H6.65906C6.47157 10.2161 6.31958 10.3766 6.31958 10.574C6.31958 10.7715 6.47157 10.9316 6.65906 10.9316H9.03686Z"
+                      fill="#222222" />
+                    <path
+                      d="M22.663 14.4635C21.1849 14.4635 19.9819 15.7308 19.9819 17.2884V21.1092C19.9819 21.307 20.1339 21.4668 20.3214 21.4668C20.5089 21.4668 20.6609 21.307 20.6609 21.1092V17.2884C20.6609 16.125 21.5591 15.1787 22.663 15.1787C22.8505 15.1787 23.0025 15.0186 23.0025 14.8208C23.0025 14.6237 22.8505 14.4635 22.663 14.4635Z"
+                      fill="#222222" />
+                    <path
+                      d="M34.388 14.4635C32.9095 14.4635 31.7065 15.7308 31.7065 17.2884V21.1092C31.7065 21.307 31.8585 21.4668 32.046 21.4668C32.2335 21.4668 32.3855 21.307 32.3855 21.1092V17.2884C32.3855 16.125 33.2837 15.1787 34.388 15.1787C34.5754 15.1787 34.7274 15.0186 34.7274 14.8208C34.7274 14.6237 34.5754 14.4635 34.388 14.4635Z"
+                      fill="#222222" />
+                    <path
+                      d="M3.16115 19.9866C2.0573 19.9866 1.15869 19.0403 1.15869 17.8765V15.8844H2.30802C2.49551 15.8844 2.6475 15.7243 2.6475 15.5268C2.6475 15.3293 2.49551 15.1692 2.30802 15.1692H1.15869V14.1597C1.15869 13.9622 1.0067 13.8021 0.819212 13.8021C0.631724 13.8021 0.479736 13.9622 0.479736 14.1597V17.8765C0.479736 19.4345 1.68269 20.7021 3.16115 20.7021C3.34864 20.7021 3.50063 20.542 3.50063 20.3442C3.50063 20.1467 3.34864 19.9866 3.16115 19.9866Z"
+                      fill="#222222" />
+                    <path
+                      d="M7.25376 20.1641C5.95095 20.1641 4.89074 19.0473 4.89074 17.6746C4.89074 16.3015 5.95095 15.1847 7.25376 15.1847C8.55656 15.1847 9.6164 16.3015 9.6164 17.6746C9.6164 19.0473 8.55656 20.1641 7.25376 20.1641ZM9.99989 14.64C9.8124 14.64 9.66041 14.8001 9.66041 14.9976V15.718C9.10386 14.9592 8.23224 14.4692 7.25376 14.4692C5.57635 14.4692 4.21216 15.9069 4.21216 17.6746C4.21216 19.4415 5.57635 20.8796 7.25376 20.8796C8.23224 20.8796 9.10386 20.3897 9.66041 19.6308V20.3512C9.66041 20.5487 9.8124 20.7088 9.99989 20.7088C10.1874 20.7088 10.3397 20.5487 10.3397 20.3512V14.9976C10.3397 14.8001 10.1874 14.64 9.99989 14.64Z"
+                      fill="#222222" />
+                    <path
+                      d="M24.7479 17.3728C24.7234 17.3728 24.6994 17.3758 24.6761 17.3806C24.8325 16.1551 25.7981 15.2088 26.9622 15.2088C28.1237 15.2088 29.0878 16.151 29.2468 17.3728H24.7479ZM26.9622 14.4936C25.3151 14.4936 23.9753 15.9454 23.9753 17.7304C23.9753 17.7312 23.9753 17.7315 23.9753 17.7323C23.9761 19.5857 25.4076 21.093 27.1667 21.093C27.3538 21.093 27.5062 20.9333 27.5062 20.7354C27.5062 20.5379 27.3538 20.3778 27.1667 20.3778C25.8939 20.3778 24.8418 19.3746 24.6787 18.0799C24.7009 18.0851 24.7238 18.0884 24.7479 18.0884H29.6096C29.7971 18.0884 29.9491 17.9283 29.9491 17.7304C29.9491 15.9454 28.6089 14.4936 26.9622 14.4936Z"
+                      fill="#222222" />
+                    <path
+                      d="M15.1168 20.1711C13.814 20.1711 12.7538 19.0543 12.7538 17.6816C12.7538 16.3085 13.814 15.1918 15.1168 15.1918C16.4196 15.1918 17.4794 16.3085 17.4794 17.6816C17.4794 19.0543 16.4196 20.1711 15.1168 20.1711ZM17.8629 14.647C17.6758 14.647 17.5234 14.8072 17.5234 15.005V15.725C16.9669 14.9662 16.0953 14.4762 15.1168 14.4762C13.4394 14.4762 12.0752 15.914 12.0752 17.6816C12.0752 19.4489 13.4394 20.8867 15.1168 20.8867C16.0953 20.8867 16.9669 20.3967 17.5234 19.6378V23.642C17.5234 23.8399 17.6758 24 17.8629 24C18.0504 24 18.2028 23.8399 18.2028 23.642V15.005C18.2028 14.8072 18.0504 14.647 17.8629 14.647Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+              <i class="icon-base ti menu-toggle-icon d-none d-xl-block"></i>
+              <i class="icon-base ti tabler-x d-block d-xl-none"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <li class="menu-item menu-dropdown">
+              <a
+                href="#"
+                class="menu-link menu-toggle"
+                data-bs-toggle="collapse"
+                data-bs-target="#charityMenu"
+                aria-expanded="false">
+                <i class="menu-icon icon-base ti tabler-building-community"></i>
+                <div>الجمعيات</div>
+                <span class="caret"></span>
+              </a>
+              <ul class="menu-sub collapse" id="charityMenu">
+                <li class="menu-item">
+                  <a
+                    href="#"
+                    class="menu-link"
+                    onclick="loadPage('roles/charity/profile-completion/profile-completion.html'); return false;">
+                    <i class="menu-icon icon-base ti tabler-user-check"></i>
+                    <div>إكمال البروفايل</div>
+                  </a>
+                </li>
+                <li class="menu-item menu-dropdown">
+                  <a
+                    href="#"
+                    class="menu-link menu-toggle"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#projectsMenu"
+                    aria-expanded="false">
+                    <i class="menu-icon icon-base ti tabler-folders"></i>
+                    <div>المشاريع</div>
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="menu-sub collapse" id="projectsMenu">
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/charity/projects/view-projects/view-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-eye"></i>
+                        <div>عرض المشاريع</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/charity/projects/create-projects/create-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-square-plus"></i>
+                        <div>إضافة مشروع</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/charity/projects/edit-projects/edit-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-pencil"></i>
+                        <div>تعديل مشروع</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/charity/projects/active-projects/active-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-bolt"></i>
+                        <div>المشاريع النشطة</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/charity/projects/draft-projects/draft-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-file-pencil"></i>
+                        <div>المشاريع المسودة</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <a
+                href="#"
+                class="menu-link menu-toggle"
+                data-bs-toggle="collapse"
+                data-bs-target="#charityMenu"
+                aria-expanded="false">
+                <i class="menu-icon icon-base ti tabler-user-dollar"></i>
+                <div>المتبرعين</div>
+                <span class="caret"></span>
+              </a>
+              <ul class="menu-sub collapse" id="charityMenu">
+                <li class="menu-item">
+                  <a
+                    href="#"
+                    class="menu-link"
+                    onclick="loadPage('roles/donor/profile-completion/profile-completion.html'); return false;">
+                    <i class="menu-icon icon-base ti tabler-user-check"></i>
+                    <div>إكمال البروفايل</div>
+                  </a>
+                </li>
+                <li class="menu-item menu-dropdown">
+                  <a
+                    href="#"
+                    class="menu-link menu-toggle"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#projectsMenu"
+                    aria-expanded="false">
+                    <i class="menu-icon icon-base ti tabler-folders"></i>
+                    <div>المشاريع</div>
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="menu-sub collapse" id="projectsMenu">
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/donor/projects/view-projects/view-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-eye"></i>
+                        <div>عرض المشاريع</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/donor/projects/discover-projects/discover-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-world-search"></i>
+                        <div>اكتشف المشاريع</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/charity/projects/edit-projects/edit-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-pencil"></i>
+                        <div>تعديل مشروع</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/charity/projects/active-projects/active-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-bolt"></i>
+                        <div>المشاريع النشطة</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="#"
+                        class="menu-link"
+                        onclick="loadPage('roles/charity/projects/draft-projects/draft-projects.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-file-pencil"></i>
+                        <div>المشاريع المسودة</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="menu-mobile-toggler d-xl-none rounded-1">
+          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large text-bg-secondary p-2 rounded-1">
+            <i class="ti tabler-menu icon-base"></i>
+            <i class="ti tabler-chevron-right icon-base"></i>
+          </a>
+        </div>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar-detached navbar navbar-expand-xl align-items-center bg-navbar-theme"
+            id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
+                <i class="icon-base ti tabler-menu-2 icon-md"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item dropdown me-2 me-xl-0">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    id="nav-theme"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown">
+                    <i class="icon-base ti tabler-sun icon-md theme-icon-active"></i>
+                    <span class="d-none ms-2" id="nav-theme-text">Toggle theme</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="nav-theme-text">
+                    <li>
+                      <button
+                        type="button"
+                        class="dropdown-item align-items-center active"
+                        data-bs-theme-value="light"
+                        aria-pressed="false">
+                        <span><i class="icon-base ti tabler-sun icon-md me-3" data-icon="sun"></i>Light</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="dropdown-item align-items-center"
+                        data-bs-theme-value="dark"
+                        aria-pressed="true">
+                        <span
+                          ><i class="icon-base ti tabler-moon-stars icon-md me-3" data-icon="moon-stars"></i>Dark</span
+                        >
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="dropdown-item align-items-center"
+                        data-bs-theme-value="system"
+                        aria-pressed="false">
+                        <span
+                          ><i
+                            class="icon-base ti tabler-device-desktop-analytics icon-md me-3"
+                            data-icon="device-desktop-analytics"></i
+                          >System</span
+                        >
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <ul class="navbar-nav flex-row align-items-center ms-md-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow p-0"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../../assets/img/avatars/1.png" alt class="rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-0">John Doe</h6>
+                            <small class="text-body-secondary">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider my-1 mx-n2"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="icon-base ti tabler-user icon-md me-3"></i><span>My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="icon-base ti tabler-settings icon-md me-3"></i><span>Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <span class="d-flex align-items-center align-middle">
+                          <i class="flex-shrink-0 icon-base ti tabler-credit-card icon-md me-3"></i
+                          ><span class="flex-grow-1 align-middle">Billing Plan</span>
+                          <span class="flex-shrink-0 badge rounded-pill bg-danger">4</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider my-1 mx-n2"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <i class="icon-base ti tabler-power icon-md me-3"></i><span>Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+            <div id="main-content" class="container-xxl flex-grow-1 container-p-y">
+              <!-- Dynamic content will be loaded here -->
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-center py-4 flex-md-row flex-column">
+                  <div class="text-body">جميع الحقوق محفوظة © 2025 منصة تقرير - أحد منتجات حلول الثقة</div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/theme.js  -->
+
+    <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+
+    <script src="../../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../../assets/vendor/js/bootstrap.js"></script>
+
+    <script src="../../assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="../../assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+
+    <script src="../../assets/vendor/libs/pickr/pickr.js"></script>
+
+    <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../../assets/vendor/libs/hammer/hammer.js"></script>
+
+    <script src="../../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script>
+      function loadPage(url) {
+        fetch(url)
+          .then(response => {
+            if (!response.ok) throw new Error('Page not found: ' + url);
+            return response.text();
+          })
+          .then(html => {
+            document.getElementById('main-content').innerHTML = html;
+            window.history.pushState({}, '', '#' + url); // Optional: update URL hash for back/forward
+          })
+          .catch(err => {
+            document.getElementById('main-content').innerHTML = "<p class='text-danger'>Could not load page.</p>";
+          });
+      }
+
+      // Load default page on startup or from URL hash
+      document.addEventListener('DOMContentLoaded', function () {
+        let defaultPage = 'roles/charity/profile-completion.html';
+        let pageFromHash = window.location.hash.replace('#', '');
+        loadPage(pageFromHash || defaultPage);
+
+        // Handle browser back/forward
+        window.onpopstate = function () {
+          let pageFromHash = window.location.hash.replace('#', '');
+          loadPage(pageFromHash || defaultPage);
+        };
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="projects-container mx-auto">
+    <!-- Header Row -->
+    <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center header-row">
+        <h5 class="page-title mb-2 mb-md-0">المشاريع المنشورة</h5>
+        <button class="btn btn-primary d-flex align-items-center gap-2">
+            <span>نشر مشروع جديد</span>
+            <i class="icon-base ti tabler-speakerphone icon-md ms-3"></i>
+        </button>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="stats-row d-flex flex-column flex-lg-row gap-3 mt-3">
+        <div class="stats-card flex-grow-1 text-start">
+            <div class="stats-label">حجم التبرعات</div>
+            <div class="d-flex align-items-center gap-2 justify-content-start">
+                <span class="stats-value">12,556.56</span>
+                <span class="custom-sar">
+                    <img src="../../../../assets/img/svg/riyal-black.svg">
+                </span>
+                <span class="badge bg-success-subtle text-success">&#x200E;+118%</span>
+            </div>
+        </div>
+
+        <div class="divider d-none d-lg-block"></div>
+
+        <div class="stats-card flex-grow-1 text-start">
+            <div class="stats-label">نسبة الرضى عن الجمعية</div>
+            <div class="d-flex align-items-center gap-2 justify-content-start">
+                <span class="stats-value">97%</span>
+                <span class="badge bg-danger-subtle text-danger">&#x200E;-5.7%</span>
+            </div>
+        </div>
+
+        <div class="divider d-none d-lg-block"></div>
+
+        <div class="stats-card flex-grow-1 text-start">
+            <div class="stats-label">عدد المشاريع</div>
+            <div class="d-flex align-items-center gap-2 justify-content-start">
+                <span class="stats-value">12</span>
+                <span class="badge bg-success-subtle text-success">&#x200E;+5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="row g-4 mt-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع">
+                </div>
+                <div class="p-5">
+                    <h6 class="project-title mb-2">عنوان المشروع</h6>
+                    <div class="project-desc mb-2">وصف المشروع</div>
+
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <div class="progress flex-grow-1" style="height: 4px;">
+                            <div class="progress-bar bg-success" style="width: 50%;"></div>
+                        </div>
+                        <span class="small">50%</span>
+                    </div>
+
+                    <div class="d-flex text-muted small mb-3">
+
+                        <span class="m-1">32,456 <img src="../../../../assets/img/svg/riyal.svg">
+                        </span>
+                        <span class="m-1">جمعت من 50,000 <img src="../../../../assets/img/svg/riyal.svg">
+                        </span>
+                    </div>
+
+                    <button class="btn btn-outline-primary w-100">عرض التفاصيل</button>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat cards here -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-wrapper mt-4 d-flex justify-content-center gap-2 flex-wrap mt-5">
+        <button class="page-btn"> <i class="icon-base ti tabler-chevron-right icon-md"></i>
+        </button>
+        <button class="page-btn">1</button>
+        <button class="page-btn active">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn"> <i class="icon-base ti tabler-chevron-left icon-md"></i>
+        </button>
+    </div>
+
+</div>

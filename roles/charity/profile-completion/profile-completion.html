@@ -1,0 +1,55 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="profile-completion-card shadow bg-white rounded-3 p-4">
+  <form>
+    <!-- Top Section: Logo + Buttons + File Info + Reg Number -->
+    <div class="logo-buttons-row d-flex flex-wrap align-items-start justify-content-between gap-4 mb-5">
+      <!-- Logo + Buttons (Right) -->
+      <div class="logo-upload-section d-flex flex-column align-items-start gap-2">
+        <label class="form-label-sm mb-1">رفع شعار الجهة</label>
+        <div class="logo-btns-wrapper d-flex align-items-center gap-4 mb-2">
+          <img src="../../assets/img/jeddah-orphans.png" alt="شعار الجهة" class="org-logo">
+          <div class="logo-btns d-flex flex-column align-items-center gap-2">
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-outline-primary btn-sm px-4">حذف</button>
+              <button type="button" class="btn btn-primary btn-sm px-4">أضف صورة جديدة</button>
+            </div>
+            <div class="logo-upload-info d-flex flex-row-reverse gap-2 small text-muted">
+              <span>حجم الملف لا يتجاوز 5MB</span>
+              <span>PNG, JPG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration Number -->
+    <div class="reg-number-section d-flex flex-column align-items-start gap-2 mb-5">
+      <label for="org-id" class="form-label-sm mb-1">رقم التسجيل IPI</label>
+      <input type="text" class="form-control text-start" id="org-id" placeholder="1234-5678">
+    </div>
+
+    <!-- Registration Certificate Upload -->
+    <div class="cert-upload-section mb-5">
+      <label class="form-label mb-2">رفع شهادة التسجيل أو الترخيص</label>
+      <div class="dropzone text-center d-flex flex-column justify-content-center align-items-center">
+        <div class="icon-upload mb-2">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path d="M12 16V8M12 8L8 12M12 8l4 4" stroke="#808390" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <rect x="4" y="18" width="16" height="2" rx="1" fill="#808390" />
+          </svg>
+        </div>
+        <div class="fw-bold fs-5 mb-1">اسحب وأفلِت ملفك هنا</div>
+        <div class="text-muted mb-2">أو</div>
+        <button type="button" class="btn btn-outline-primary btn-sm px-4">تصفح الملفات</button>
+      </div>
+    </div>
+    <!-- Buttons row -->
+    <div class="form-actions d-flex gap-3 justify-content-end mt-3">
+      <button type="button" class="btn btn-outline-secondary px-4">إلغاء</button>
+      <button type="submit" class="btn btn-primary px-4">حفظ المعلومات</button>
+    </div>
+  </form>
+</div>

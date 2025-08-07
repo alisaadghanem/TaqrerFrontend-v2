@@ -1,0 +1,197 @@
+    <div class="container py-4">
+        <div class="row gx-4">
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box mb-4">
+                    <h5 class="sidebar-title mb-4">إضافة مشروع جديد</h5>
+                    <ul class="sidebar-nav list-unstyled mb-0">
+                        <li class="sidebar-nav-item active">تفاصيل المشروع</li>
+                        <li class="sidebar-nav-item">قنوات المشاركة</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main content (form & steps) -->
+            <div class="col-lg-9">
+                <!-- Step 1: Project Details -->
+                <div>
+                    <!-- Project Image Card -->
+                    <div class="card project-card mb-4">
+                        <div class="card-header pb-0">
+                            <h5 class="project-card-title">صورة المشروع</h5>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="dropzone d-flex flex-column align-items-center justify-content-center">
+                                <div class="icon-upload mb-3">
+                                    <!-- Upload SVG icon here -->
+                                    <svg width="24" height="24" fill="none">
+                                        <path d="M12 16V8M12 8L8 12M12 8l4 4" stroke="#808390" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <rect x="4" y="18" width="16" height="2" rx="1" fill="#808390" />
+                                    </svg>
+                                </div>
+                                <div class="dz-title mb-1">اسحب وأفلِت صورتك هنا</div>
+                                <div class="dz-or mb-2">أو</div>
+                                <button type="button" class="btn dz-btn">تصفح الصور</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Details Card -->
+                    <div class="card project-card mb-4">
+                        <div class="card-header pb-0">
+                            <h5 class="project-card-title">تفاصيل المشروع</h5>
+                        </div>
+                        <div class="card-body pt-0">
+                            <form>
+                                <div class="row gx-3 gy-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label project-custom-label">عنوان المشروع</label>
+                                        <input type="text" class="form-control custom-input"
+                                            placeholder="عنوان المشروع" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label project-custom-label">وصف مختصر</label>
+                                        <input type="text" class="form-control custom-input" placeholder="وصف مختصر" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label project-custom-label">حالة المشروع</label>
+                                        <select class="form-select custom-input">
+                                            <option>مسودة</option>
+                                            <option>منشورة</option>
+                                            <!-- Add more statuses -->
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label project-custom-label">المبلغ المستهدف</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control custom-input" placeholder="0.00" />
+                                            <span class="input-group-text custom-sar">
+                                                <img src="../../../../assets/img/svg/riyal.svg">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label project-custom-label">وصف المشروع</label>
+                                        <textarea class="form-control custom-input" rows="2"
+                                            placeholder="اكتب وصف المشروع هنا"></textarea>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center gap-2">
+                                        <input type="checkbox" id="all-beneficiaries"
+                                            class="form-check-input custom-checkbox" checked />
+                                        <label for="all-beneficiaries"
+                                            class="form-check-label project-custom-label mb-0">
+                                            تحديد جميع المتبرعين افتراضيًا
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-secondary btn-text-secondary" type="button" disabled>
+                            <i class="icon-base ti tabler-arrow-forward-up icon-md me-1"></i>
+                            <span>رجوع</span>
+                        </button>
+                        <button class="btn btn-primary btn-main" type="button" onclick="showStep(2)">
+                            <span>قنوات المشاركة</span>
+                            <i class="icon-base ti tabler-chevron-left icon-md ms-3"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Channels Selection -->
+                <div>
+                    <div class="card project-card mb-4 mt-10">
+                        <div class="card-header pb-0">
+                            <h5 class="project-card-title">إختر قنوات المشاركة</h5>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="d-flex flex-wrap gap-4 justify-content-center align-items-start channels-list">
+
+
+                                <!-- تنبيهات التطبيق -->
+                                <div class="step-trigger d-flex align-items-center gap-3 channel-box">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input custom-checkbox" />
+                                    </div>
+                                    <div class="channel-icon d-flex justify-content-center align-items-center bg-app">
+                                        <!-- SVG Bell icon -->
+                                        <img src="../../../../assets/img/svg/bell.svg">
+
+                                    </div>
+                                    <div class="channel-info d-flex flex-column align-items-start"
+                                        style="min-width: 120px;">
+                                        <span class="fw-bold channel-title">تنبيهات التطبيق</span>
+                                        <span class="text-muted channel-desc">9 تنبيهات متبقية</span>
+                                    </div>
+                                </div>
+
+                                <!-- الإضافة إلى المتجر -->
+                                <div class="step-trigger d-flex align-items-center gap-3 channel-box">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input custom-checkbox" />
+                                    </div>
+                                    <div class="channel-icon d-flex justify-content-center align-items-center bg-store">
+                                        <!-- SVG Store icon -->
+                                        <img src="../../../../assets/img/svg/store.svg">
+                                    </div>
+                                    <div class="channel-info d-flex flex-column align-items-end"
+                                        style="min-width: 110px;">
+                                        <span class="fw-bold channel-title">الإضافة إلى المتجر</span>
+                                    </div>
+                                </div>
+
+                                <!-- البريد الإلكتروني -->
+                                <div class="step-trigger d-flex align-items-center gap-3 channel-box">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input custom-checkbox" />
+                                    </div>
+                                    <div class="channel-icon d-flex justify-content-center align-items-center bg-email">
+                                        <!-- SVG Mail icon -->
+                                        <img src="../../../../assets/img/svg/mail.svg">
+
+                                    </div>
+                                    <div class="channel-info d-flex flex-column align-items-start"
+                                        style="min-width: 120px;">
+                                        <span class="fw-bold channel-title">البريد الإلكتروني</span>
+                                        <span class="text-muted channel-desc">9 تنبيهات متبقية</span>
+                                    </div>
+                                </div>
+
+                                <!-- واتساب -->
+                                <div class="step-trigger d-flex align-items-center gap-3 channel-box">
+                                    <div
+                                        class="channel-icon d-flex justify-content-center align-items-center bg-whatsapp">
+                                        <!-- SVG WhatsApp icon -->
+                                        <img src="../../../../assets/img/svg/whatsapp.svg">
+
+                                    </div>
+                                    <div class="channel-info d-flex flex-column align-items-start"
+                                        style="min-width: 120px;">
+                                        <span class="fw-bold channel-title">واتساب</span>
+                                        <a href="#" class="btn btn-outline-primary btn-sm px-2 mt-1"
+                                            style="font-size:13px;">
+                                            تفعيل الخدمة
+                                            <img src="../../../../assets/img/svg/link.svg">
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Action buttons for step 2 -->
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-secondary btn-text-secondary" type="button">
+                            <i class="icon-base ti tabler-arrow-forward-up icon-md me-1"></i>
+                            <span>رجوع</span>
+                        </button>
+                        <button class="btn btn-primary btn-main" type="submit">
+                            <span>حفظ المشروع</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

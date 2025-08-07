@@ -1,0 +1,141 @@
+.profile-completion-card {
+    width: 100%;
+    max-width: 808px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(43, 50, 61, 0.14);
+    border-radius: 8px;
+    margin: 32px auto;
+    direction: rtl;
+    padding: 24px;
+}
+
+.profile-completion-card .form-label {
+    color: var(--Theme-text-primary, #2F2B3DE5);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.profile-completion-card .form-label-sm {
+    color: var(--Theme-text-primary, #2F2B3DE5);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.logo-upload-section {
+    min-width: 260px;
+}
+
+.donor-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.logo-btns-info {
+    font-size: 13px;
+}
+
+.logo-upload-info span {
+    font-size: 13px;
+}
+
+.info-section {
+    gap: 16px;
+    width: 100%;
+}
+.info-section > div {
+    flex: 1 1 0;
+    min-width: 0;
+}
+.info-section .form-control {
+    width: 100%;
+    background: #fafbfc;
+}
+
+.dropzone {
+    border: 1.5px dashed #C2C7D0;
+    background: #fafbfc;
+    border-radius: 6px;
+    min-height: 220px;
+    padding: 48px 12px;
+    width: 100%;
+}
+
+.icon-upload {
+    background: #EEEDF0;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-completion-card .btn-primary {
+    background: #2776FF;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(103, 153, 240, 0.3);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profile-completion-card .btn-outline-primary {
+    background: rgba(39, 118, 255, 0.16);
+    color: #2776FF;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profile-completion-card .btn-outline-secondary {
+    background: rgba(128, 131, 144, 0.16);
+    color: #808390;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+    .profile-completion-card {
+        padding: 16px;
+    }
+
+    .dropzone {
+        padding: 32px 8px;
+        min-height: 120px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .profile-completion-card {
+        margin: 12px auto;
+        padding: 8px;
+    }
+
+    .donor-logo {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .profile-completion-card .btn,
+    .profile-completion-card .btn-sm {
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+
+    .dropzone {
+        padding: 18px 2px;
+        min-height: 80px;
+        max-width: 100%;
+    }
+
+    .logo-btns-wrapper {
+        flex-direction: column !important;
+        gap: 8px !important;
+        align-items: center !important;
+    }
+}
