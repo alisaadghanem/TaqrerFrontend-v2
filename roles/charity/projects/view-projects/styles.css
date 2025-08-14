@@ -1,202 +1,195 @@
 /* Stats row */
 .stats-row {
-    display: flex;
-    background: #FFFFFF;
-    border-radius: 6px;
-    box-shadow: 0px 3px 12px 0px #2F2B3D24;
-    padding: 24px;
-    flex-wrap: wrap;
+  display: flex;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 12px 0px #2f2b3d24;
+  padding: 24px;
+  flex-wrap: wrap;
 }
 
 .stats-card {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 6px;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
 }
 
 .stats-label {
-    font-size: 15px;
-    font-weight: 400;
-    color: linear-gradient(0deg, #2B323D, #2B323D),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-
+  font-size: 15px;
+  font-weight: 400;
+  color:
+    linear-gradient(0deg, #2b323d, #2b323d), linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
 
 .stats-value {
-    font-size: 38px;
-    font-weight: 500;
-    color: linear-gradient(0deg, #2B323D, #2B323D),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-
+  font-size: 38px;
+  font-weight: 500;
+  color:
+    linear-gradient(0deg, #2b323d, #2b323d), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 
 .divider {
-    width: 1px;
-    background-color: rgba(47, 43, 61, 0.12);
-    margin: 0 10px;
+  width: 1px;
+  background-color: rgba(47, 43, 61, 0.12);
+  margin: 0 10px;
 }
 
 .chart-card,
 .project-info-card {
-    background: #FFFFFF;
-    box-shadow: 0px 3px 12px 0px #2F2B3D24;
-    border-radius: 6px;
-    padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 3px 12px 0px #2f2b3d24;
+  border-radius: 6px;
+  padding: 24px;
 }
 
 .chart-title,
 .info-title {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--Theme-text-primary, #2F2B3DE5);
-
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--Theme-text-primary, #2f2b3de5);
 }
 
 .help-icon {
-    width: 20px;
-    height: 20px;
-    border: 1.5px solid rgba(47, 43, 61, 0.9);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid rgba(47, 43, 61, 0.9);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .chart-placeholder {
-    border-radius: 6px;
-    width: 100%;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .legend-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .legend-dot.blue {
-    background: #1A6EFF;
+  background: #1a6eff;
 }
 
 .legend-dot.green {
-    background: #14AE5C;
+  background: #14ae5c;
 }
 
 .legend-text {
-    font-size: 13px;
-    color: rgba(47, 43, 61, 0.7);
+  font-size: 13px;
+  color: rgba(47, 43, 61, 0.7);
 }
 
 .btn-primary {
-    background: #2776FF;
-    border: none;
-    box-shadow: 0px 2px 6px rgba(103, 153, 240, 0.3);
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: 500;
+  background: #2776ff;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(103, 153, 240, 0.3);
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .project-img-container {
-    background: #f8f9fb;
-    border-radius: 6px;
-    padding: 0;
-    overflow: hidden;
-    height: 348px;
+  background: #f8f9fb;
+  border-radius: 6px;
+  padding: 0;
+  overflow: hidden;
+  height: 348px;
 }
 
 .project-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
 }
 
-
 .status-chip {
-    background: #808390;
-    color: #fff;
-    font-size: 13px;
-    padding: 2px 10px;
-    border-radius: 4px;
+  background: #808390;
+  color: #fff;
+  font-size: 13px;
+  padding: 2px 10px;
+  border-radius: 4px;
 }
 
 .project-title {
-    font-size: 24px;
-    font-weight: 500;
-    margin: 0;
-    color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  color: #000000;
 }
 
 .project-subtitle {
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--Theme-text-secondary, #2F2B3DB2);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Theme-text-secondary, #2f2b3db2);
 }
 
 .donation-row {
-    font-size: 15px;
-    color: #1E1E1E;
+  font-size: 15px;
+  color: #1e1e1e;
 }
 
 .progress {
-    height: 6px;
-    background: rgba(43, 50, 61, 0.2);
-    border-radius: 500px;
+  height: 6px;
+  background: rgba(43, 50, 61, 0.2);
+  border-radius: 500px;
 }
 
 .progress-bar {
-    background: #28C76F;
-    border-radius: 500px;
+  background: #28c76f;
+  border-radius: 500px;
 }
 
 .desc-title {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--Theme-text-primary, #2F2B3DE5);
-
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--Theme-text-primary, #2f2b3de5);
 }
 
 .desc-text {
-    font-size: 15px;
-    font-style: 400;
-    color: var(--Theme-text-secondary, #2F2B3DB2);
-
+  font-size: 15px;
+  font-style: 400;
+  color: var(--Theme-text-secondary, #2f2b3db2);
 }
 
 @media (max-width: 991px) {
-    .project-title {
-        font-size: 20px;
-    }
+  .project-title {
+    font-size: 20px;
+  }
 
-    .stats-value {
-        font-size: 22px;
-    }
+  .stats-value {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 767px) {
-
-    .info-title,
-    .chart-title {
-        font-size: 16px;
-    }
+  .info-title,
+  .chart-title {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 575px) {
-    .stats-row {
-        flex-direction: column;
-    }
+  .stats-row {
+    flex-direction: column;
+  }
 
-    .divider {
-        display: none;
-    }
+  .divider {
+    display: none;
+  }
 }

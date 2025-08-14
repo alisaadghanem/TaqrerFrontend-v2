@@ -53,10 +53,12 @@
     <link rel="stylesheet" href="roles/charity/projects/active-projects/styles.css" />
     <link rel="stylesheet" href="roles/charity/projects/draft-projects/styles.css" />
     <link rel="stylesheet" href="roles/charity/projects/view-projects/styles.css" />
+    <link rel="stylesheet" href="roles/charity/dashboard/styles.css" />
 
     <link rel="stylesheet" href="roles/donor/profile-completion/styles.css" />
     <link rel="stylesheet" href="roles/donor/projects/view-projects/styles.css" />
     <link rel="stylesheet" href="roles/donor/projects/discover-projects/styles.css" />
+    <link rel="stylesheet" href="roles/donor/dashboard/styles.css" />
 
     <!-- endbuild -->
 
@@ -152,6 +154,15 @@
                   <a
                     href="#"
                     class="menu-link"
+                    onclick="loadPage('roles/charity/dashboard/entity-dashboard.html'); return false;">
+                    <i class="menu-icon icon-base ti tabler-chart-pie"></i>
+                    <div>لوحة البيانات</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="#"
+                    class="menu-link"
                     onclick="loadPage('roles/charity/profile-completion/profile-completion.html'); return false;">
                     <i class="menu-icon icon-base ti tabler-user-check"></i>
                     <div>إكمال البروفايل</div>
@@ -229,7 +240,16 @@
                 <div>المتبرعين</div>
                 <span class="caret"></span>
               </a>
-              <ul class="menu-sub collapse" id="charityMenu">
+              <ul class="menu-sub collapse" id="donorMenu">
+                <li class="menu-item">
+                  <a
+                    href="#"
+                    class="menu-link"
+                    onclick="loadPage('roles/donor/dashboard/donor-dashboard.html'); return false;">
+                    <i class="menu-icon icon-base ti tabler-dashboard"></i>
+                    <div>حسابي</div>
+                  </a>
+                </li>
                 <li class="menu-item">
                   <a
                     href="#"
@@ -267,15 +287,6 @@
                         onclick="loadPage('roles/donor/projects/discover-projects/discover-projects.html'); return false;">
                         <i class="menu-icon icon-base ti tabler-world-search"></i>
                         <div>اكتشف المشاريع</div>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a
-                        href="#"
-                        class="menu-link"
-                        onclick="loadPage('roles/charity/projects/edit-projects/edit-projects.html'); return false;">
-                        <i class="menu-icon icon-base ti tabler-pencil"></i>
-                        <div>تعديل مشروع</div>
                       </a>
                     </li>
                     <li class="menu-item">

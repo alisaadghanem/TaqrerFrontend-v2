@@ -1,351 +1,368 @@
 <head>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <div>
-    <div class="donor-panel mx-auto">
-        <img src="../../../../assets//img/svg/taqrer-logo.svg" alt="taqrer-logo">
-        <!-- Top Row: Card (right) + Header (left) -->
-        <div class="row donor-top-row align-items-start gx-5 mb-5 p-md-12 flex-lg-row flex-column-reverse">
-            <!-- Header on the left (becomes top on mobile) -->
+  <div class="donor-panel mx-auto">
+    <img src="../../../../assets//img/svg/taqrer-logo.svg" alt="taqrer-logo" />
+    <!-- Top Row: Card (right) + Header (left) -->
+    <div class="row donor-top-row align-items-start gx-5 mb-5 p-md-12 flex-lg-row flex-column-reverse">
+      <!-- Header on the left (becomes top on mobile) -->
+      <div class="col-lg-7 d-flex flex-column align-items-start justify-content-center header-area order-lg-1 order-2">
+        <h2 class="main-title mb-2">المشاريع النشطة</h2>
+        <p class="main-desc">اكتشف مشاريعنا الخيرية الحالية وساهم في إحداث تغيير إيجابي في حياة المحتاجين</p>
+      </div>
+      <!-- Card on the right (becomes below on mobile) -->
+      <div class="col-lg-5 justify-content-end order-lg-2 order-1 mb-4 mb-lg-0">
+        <div class="project-card main-highlight">
+          <div class="project-img">
+            <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع" />
+          </div>
+          <div class="p-5">
+            <div class="project-title mb-2">عنوان المشروع</div>
+            <div class="project-desc mb-2">وصف المشروع</div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="progress flex-grow-1" style="height: 4px">
+                <div class="progress-bar bg-success" style="width: 50%"></div>
+              </div>
+              <span class="small">50%</span>
+            </div>
             <div
-                class="col-lg-7 d-flex flex-column align-items-start justify-content-center header-area order-lg-1 order-2">
-                <h2 class="main-title mb-2">المشاريع النشطة</h2>
-                <p class="main-desc">
-                    اكتشف مشاريعنا الخيرية الحالية وساهم في إحداث تغيير إيجابي في حياة المحتاجين
-                </p>
+              class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
+              <span class="d-flex align-items-center m-1">
+                جمعت من 50,000
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+              <span class="d-flex align-items-center m-1">
+                32,456
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
             </div>
-            <!-- Card on the right (becomes below on mobile) -->
-            <div class="col-lg-5 justify-content-end order-lg-2 order-1 mb-4 mb-lg-0">
-                <div class="project-card main-highlight">
-                    <div class="project-img">
-                        <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع">
-                    </div>
-                    <div class="p-5">
-                        <div class="project-title mb-2">عنوان المشروع</div>
-                        <div class="project-desc mb-2">وصف المشروع</div>
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <div class="progress flex-grow-1" style="height: 4px;">
-                                <div class="progress-bar bg-success" style="width: 50%;"></div>
-                            </div>
-                            <span class="small">50%</span>
-                        </div>
-                        <div
-                            class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
-                            <span class="d-flex align-items-center m-1">
-                                جمعت من 50,000
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                            <span class="d-flex align-items-center m-1">
-                                32,456
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                        </div>
 
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
-                            <button class="btn btn-primary flex-fill">تبرع الآن</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
+              <button class="btn btn-primary flex-fill">تبرع الآن</button>
             </div>
+          </div>
         </div>
-
-
-        <div class="row donor-filter-row mb-3">
-            <div class="col-12">
-                <label class="mb-2 actions-titles" for="publish-date">عرض مشاريع الجمعيات</label>
-                <div class="donor-filters-bar d-flex align-items-center justify-content-between flex-wrap gap-3">
-                    <!-- Search input with icon at the start -->
-                    <div class="input-group donor-search-group">
-                        <span class="input-group-text bg-white">
-                            <i class="icon-base ti tabler-search icon-sm"></i>
-                        </span>
-                        <input class="form-control donor-search" placeholder="بحث عن مشروع أو اسم الجهة" />
-                    </div>
-                    <!-- Filter buttons group: now at the other side -->
-                    <div class="d-flex gap-2">
-                        <button class="btn btn-outline-primary donor-filter-btn">مسح التصفية</button>
-                        <button class="btn btn-primary donor-filter-btn">تطبيق التصفية</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row align-items-end donor-filter-row gx-3 mb-4 alig">
-            <!-- Date Filter Block -->
-            <!-- Sort Filter Block -->
-            <div class="col-auto">
-                <div class="d-flex flex-column align-items-start">
-                    <label class="mb-2 actions-titles" for="filter-sort">ترتيب المشاريع</label>
-                    <select id="filter-sort" class="form-select donor-sort">
-                        <option>الأحدث</option>
-                        <option>الأقدم</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-auto">
-                <div class="d-flex flex-column align-items-start">
-                    <label class="mb-2 actions-titles" for="filter-date">تاريخ نشر المشروع</label>
-                    <input type="date" id="filter-date" class="form-control donor-date-picker" />
-                </div>
-            </div>
-            <!-- Tabs/Buttons Block -->
-            <div class="col d-flex gap-2 flex-row-reverse justify-content-end mb-1">
-                <button class="tab-btn tab-btn-sm">المشاريع المكتملة</button>
-                <button class="btn btn-outline-primary tab-btn-sm">المشاريع النشطة
-                    <i class="icon-base ti tabler-check icon-sm ms-1"></i>
-                </button>
-            </div>
-        </div>
-
-        <div class="filters-full-divider"></div>
-
-        <!-- Projects Grid -->
-        <div class="row g-4">
-            <!-- Repeat for each project -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع">
-                    </div>
-                    <div class="p-5">
-                        <h6 class="project-title mb-2">عنوان المشروع</h6>
-                        <div class="project-desc mb-2">وصف المشروع</div>
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <div class="progress flex-grow-1" style="height: 4px;">
-                                <div class="progress-bar bg-success" style="width: 50%;"></div>
-                            </div>
-                            <span class="small">50%</span>
-                        </div>
-                        <div
-                            class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
-                            <span class="d-flex align-items-center m-1">
-                                جمعت من 50,000
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                            <span class="d-flex align-items-center m-1">
-                                32,456
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                        </div>
-
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
-                            <button class="btn btn-primary flex-fill">تبرع الآن</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع">
-                    </div>
-                    <div class="p-5">
-                        <h6 class="project-title mb-2">عنوان المشروع</h6>
-                        <div class="project-desc mb-2">وصف المشروع</div>
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <div class="progress flex-grow-1" style="height: 4px;">
-                                <div class="progress-bar bg-success" style="width: 50%;"></div>
-                            </div>
-                            <span class="small">50%</span>
-                        </div>
-                        <div
-                            class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
-                            <span class="d-flex align-items-center m-1">
-                                جمعت من 50,000
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                            <span class="d-flex align-items-center m-1">
-                                32,456
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                        </div>
-
-
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
-                            <button class="btn btn-primary flex-fill">تبرع الآن</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع">
-                    </div>
-                    <div class="p-5">
-                        <h6 class="project-title mb-2">عنوان المشروع</h6>
-                        <div class="project-desc mb-2">وصف المشروع</div>
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <div class="progress flex-grow-1" style="height: 4px;">
-                                <div class="progress-bar bg-success" style="width: 50%;"></div>
-                            </div>
-                            <span class="small">50%</span>
-                        </div>
-                        <div
-                            class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
-                            <span class="d-flex align-items-center m-1">
-                                جمعت من 50,000
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                            <span class="d-flex align-items-center m-1">
-                                32,456
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                        </div>
-
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
-                            <button class="btn btn-primary flex-fill">تبرع الآن</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع">
-                    </div>
-                    <div class="p-5">
-                        <h6 class="project-title mb-2">عنوان المشروع</h6>
-                        <div class="project-desc mb-2">وصف المشروع</div>
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <div class="progress flex-grow-1" style="height: 4px;">
-                                <div class="progress-bar bg-success" style="width: 50%;"></div>
-                            </div>
-                            <span class="small">50%</span>
-                        </div>
-                        <div
-                            class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
-                            <span class="d-flex align-items-center m-1">
-                                جمعت من 50,000
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                            <span class="d-flex align-items-center m-1">
-                                32,456
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                        </div>
-
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
-                            <button class="btn btn-primary flex-fill">تبرع الآن</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع">
-                    </div>
-                    <div class="p-5">
-                        <h6 class="project-title mb-2">عنوان المشروع</h6>
-                        <div class="project-desc mb-2">وصف المشروع</div>
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <div class="progress flex-grow-1" style="height: 4px;">
-                                <div class="progress-bar bg-success" style="width: 50%;"></div>
-                            </div>
-                            <span class="small">50%</span>
-                        </div>
-                        <div
-                            class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
-                            <span class="d-flex align-items-center m-1">
-                                جمعت من 50,000
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                            <span class="d-flex align-items-center m-1">
-                                32,456
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                        </div>
-
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
-                            <button class="btn btn-primary flex-fill">تبرع الآن</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع">
-                    </div>
-                    <div class="p-5">
-                        <h6 class="project-title mb-2">عنوان المشروع</h6>
-                        <div class="project-desc mb-2">وصف المشروع</div>
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <div class="progress flex-grow-1" style="height: 4px;">
-                                <div class="progress-bar bg-success" style="width: 50%;"></div>
-                            </div>
-                            <span class="small">50%</span>
-                        </div>
-                        <div
-                            class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
-                            <span class="d-flex align-items-center m-1">
-                                جمعت من 50,000
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                            <span class="d-flex align-items-center m-1">
-                                32,456
-                                <img src="../../../../assets/img/svg/riyal.svg"
-                                    style="height: 1.2em; width: 1.2em; margin-inline-start: 4px;" alt="ريال">
-                            </span>
-                        </div>
-
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
-                            <button class="btn btn-primary flex-fill">تبرع الآن</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ...repeat for each project... -->
-        </div>
-        <!-- Pagination -->
-        <div class="pagination-wrapper mt-4 d-flex justify-content-center gap-2 flex-wrap mt-5">
-            <button class="page-btn"> <i class="icon-base ti tabler-chevron-right icon-md"></i>
-            </button>
-            <button class="page-btn">1</button>
-            <button class="page-btn active">2</button>
-            <button class="page-btn">3</button>
-            <button class="page-btn"> <i class="icon-base ti tabler-chevron-left icon-md"></i>
-            </button>
-        </div>
-        <div class="d-flex justify-content-center footer-titles mt-12">
-            تابعنا ليصلك كل جديد
-        </div>
-        <div class="pagination-wrapper mt-4 d-flex justify-content-center gap-2 flex-wrap">
-            <img src="../../../../assets/img/svg/tiktok.svg" alt="tiktok">
-            <img src="../../../../assets/img/svg/facebook.svg" alt="facebook">
-            <img src="../../../../assets/img/svg/instagram.svg" alt="instagram">
-        </div>
-        <footer class="content-footer footer bg-footer-theme mt-12">
-            <div class="container-xxl">
-                <div
-                    class="footer-container d-flex align-items-center justify-content-center py-4 flex-md-row flex-column">
-                    <div class="text-body">
-                        جميع الحقوق محفوظة © 2025 منصة تقرير - أحد منتجات حلول الثقة
-                    </div>
-                </div>
-            </div>
-        </footer>
+      </div>
     </div>
+
+    <div class="row donor-filter-row mb-3">
+      <div class="col-12">
+        <label class="mb-2 actions-titles" for="publish-date">عرض مشاريع الجمعيات</label>
+        <div class="donor-filters-bar d-flex align-items-center justify-content-between flex-wrap gap-3">
+          <!-- Search input with icon at the start -->
+          <div class="input-group donor-search-group">
+            <span class="input-group-text bg-white">
+              <i class="icon-base ti tabler-search icon-sm"></i>
+            </span>
+            <input class="form-control donor-search" placeholder="بحث عن مشروع أو اسم الجهة" />
+          </div>
+          <!-- Filter buttons group: now at the other side -->
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary donor-filter-btn">مسح التصفية</button>
+            <button class="btn btn-primary donor-filter-btn">تطبيق التصفية</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-end donor-filter-row gx-3 mb-4 alig">
+      <!-- Date Filter Block -->
+      <!-- Sort Filter Block -->
+      <div class="col-auto">
+        <div class="d-flex flex-column align-items-start">
+          <label class="mb-2 actions-titles" for="filter-sort">ترتيب المشاريع</label>
+          <select id="filter-sort" class="form-select donor-sort">
+            <option>الأحدث</option>
+            <option>الأقدم</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="d-flex flex-column align-items-start">
+          <label class="mb-2 actions-titles" for="filter-date">تاريخ نشر المشروع</label>
+          <input type="date" id="filter-date" class="form-control donor-date-picker" />
+        </div>
+      </div>
+      <!-- Tabs/Buttons Block -->
+      <div class="col d-flex gap-2 flex-row-reverse justify-content-end mb-1">
+        <button class="tab-btn tab-btn-sm">المشاريع المكتملة</button>
+        <button class="btn btn-outline-primary tab-btn-sm">
+          المشاريع النشطة
+          <i class="icon-base ti tabler-check icon-sm ms-1"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="filters-full-divider"></div>
+
+    <!-- Projects Grid -->
+    <div class="row g-4">
+      <!-- Repeat for each project -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع" />
+          </div>
+          <div class="p-5">
+            <h6 class="project-title mb-2">عنوان المشروع</h6>
+            <div class="project-desc mb-2">وصف المشروع</div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="progress flex-grow-1" style="height: 4px">
+                <div class="progress-bar bg-success" style="width: 50%"></div>
+              </div>
+              <span class="small">50%</span>
+            </div>
+            <div
+              class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
+              <span class="d-flex align-items-center m-1">
+                جمعت من 50,000
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+              <span class="d-flex align-items-center m-1">
+                32,456
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
+              <button class="btn btn-primary flex-fill">تبرع الآن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع" />
+          </div>
+          <div class="p-5">
+            <h6 class="project-title mb-2">عنوان المشروع</h6>
+            <div class="project-desc mb-2">وصف المشروع</div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="progress flex-grow-1" style="height: 4px">
+                <div class="progress-bar bg-success" style="width: 50%"></div>
+              </div>
+              <span class="small">50%</span>
+            </div>
+            <div
+              class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
+              <span class="d-flex align-items-center m-1">
+                جمعت من 50,000
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+              <span class="d-flex align-items-center m-1">
+                32,456
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
+              <button class="btn btn-primary flex-fill">تبرع الآن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع" />
+          </div>
+          <div class="p-5">
+            <h6 class="project-title mb-2">عنوان المشروع</h6>
+            <div class="project-desc mb-2">وصف المشروع</div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="progress flex-grow-1" style="height: 4px">
+                <div class="progress-bar bg-success" style="width: 50%"></div>
+              </div>
+              <span class="small">50%</span>
+            </div>
+            <div
+              class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
+              <span class="d-flex align-items-center m-1">
+                جمعت من 50,000
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+              <span class="d-flex align-items-center m-1">
+                32,456
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
+              <button class="btn btn-primary flex-fill">تبرع الآن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع" />
+          </div>
+          <div class="p-5">
+            <h6 class="project-title mb-2">عنوان المشروع</h6>
+            <div class="project-desc mb-2">وصف المشروع</div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="progress flex-grow-1" style="height: 4px">
+                <div class="progress-bar bg-success" style="width: 50%"></div>
+              </div>
+              <span class="small">50%</span>
+            </div>
+            <div
+              class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
+              <span class="d-flex align-items-center m-1">
+                جمعت من 50,000
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+              <span class="d-flex align-items-center m-1">
+                32,456
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
+              <button class="btn btn-primary flex-fill">تبرع الآن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع" />
+          </div>
+          <div class="p-5">
+            <h6 class="project-title mb-2">عنوان المشروع</h6>
+            <div class="project-desc mb-2">وصف المشروع</div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="progress flex-grow-1" style="height: 4px">
+                <div class="progress-bar bg-success" style="width: 50%"></div>
+              </div>
+              <span class="small">50%</span>
+            </div>
+            <div
+              class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
+              <span class="d-flex align-items-center m-1">
+                جمعت من 50,000
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+              <span class="d-flex align-items-center m-1">
+                32,456
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
+              <button class="btn btn-primary flex-fill">تبرع الآن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="../../../../assets/img/placeholder-img.png" class="img-fluid" alt="صورة المشروع" />
+          </div>
+          <div class="p-5">
+            <h6 class="project-title mb-2">عنوان المشروع</h6>
+            <div class="project-desc mb-2">وصف المشروع</div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="progress flex-grow-1" style="height: 4px">
+                <div class="progress-bar bg-success" style="width: 50%"></div>
+              </div>
+              <span class="small">50%</span>
+            </div>
+            <div
+              class="d-flex text-muted small mb-3 flex-row-reverse flex-lg-row-reverse justify-content-lg-end justify-content-center align-items-center">
+              <span class="d-flex align-items-center m-1">
+                جمعت من 50,000
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+              <span class="d-flex align-items-center m-1">
+                32,456
+                <img
+                  src="../../../../assets/img/svg/riyal.svg"
+                  style="height: 1.2em; width: 1.2em; margin-inline-start: 4px"
+                  alt="ريال" />
+              </span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary flex-fill">عرض التفاصيل</button>
+              <button class="btn btn-primary flex-fill">تبرع الآن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ...repeat for each project... -->
+    </div>
+    <!-- Pagination -->
+    <div class="pagination-wrapper mt-4 d-flex justify-content-center gap-2 flex-wrap mt-5">
+      <button class="page-btn"><i class="icon-base ti tabler-chevron-right icon-md"></i></button>
+      <button class="page-btn">1</button>
+      <button class="page-btn active">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn"><i class="icon-base ti tabler-chevron-left icon-md"></i></button>
+    </div>
+    <div class="d-flex justify-content-center footer-titles mt-12">تابعنا ليصلك كل جديد</div>
+    <div class="pagination-wrapper mt-4 d-flex justify-content-center gap-2 flex-wrap">
+      <img src="../../../../assets/img/svg/tiktok.svg" alt="tiktok" />
+      <img src="../../../../assets/img/svg/facebook.svg" alt="facebook" />
+      <img src="../../../../assets/img/svg/instagram.svg" alt="instagram" />
+    </div>
+    <footer class="content-footer footer bg-footer-theme mt-12">
+      <div class="container-xxl">
+        <div class="footer-container d-flex align-items-center justify-content-center py-4 flex-md-row flex-column">
+          <div class="text-body">جميع الحقوق محفوظة © 2025 منصة تقرير - أحد منتجات حلول الثقة</div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </div>

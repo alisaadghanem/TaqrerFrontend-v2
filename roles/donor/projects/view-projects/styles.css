@@ -4,7 +4,7 @@ body {
 
 .donor-panel {
   background: #fff;
-  box-shadow: 0px 3px 12px 0px #2B323D24;
+  box-shadow: 0px 3px 12px 0px #2b323d24;
   border-radius: 12px;
   max-width: 1440px;
   margin: 0 auto;
@@ -23,7 +23,7 @@ body {
 .main-title {
   font-size: 46px;
   font-weight: 700;
-  color: #2B323D;
+  color: #2b323d;
   text-align: right;
   margin-bottom: 8px;
 }
@@ -31,7 +31,7 @@ body {
 .main-desc {
   font-size: 24px;
   font-weight: 500;
-  color: #2B323D;
+  color: #2b323d;
   text-align: right;
   max-width: 420px;
 }
@@ -48,7 +48,9 @@ body {
 }
 
 .project-card.main-highlight {
-  box-shadow: 0px 6px 20px rgba(115, 103, 240, 0.3), 0px 0px 20px rgba(206, 135, 243, 0.3);
+  box-shadow:
+    0px 6px 20px rgba(115, 103, 240, 0.3),
+    0px 0px 20px rgba(206, 135, 243, 0.3);
 }
 
 .project-img {
@@ -70,14 +72,14 @@ body {
 .project-card .project-title {
   font-size: 18px;
   font-weight: 500;
-  color: #2F2B3DE5;
+  color: #2f2b3de5;
 }
 
 .project-desc {
   font-size: 13px;
   font-weight: 400;
-  color: #2B323D;
-  opacity: .85;
+  color: #2b323d;
+  opacity: 0.85;
 }
 
 /* Buttons */
@@ -85,13 +87,13 @@ body {
   font-size: 15px;
   border: none;
   background: rgba(39, 118, 255, 0.16);
-  color: #2776FF;
+  color: #2776ff;
   font-weight: 500;
   border-radius: 6px;
 }
 
 .btn-outline-primary:hover {
-  background: #2776FF;
+  background: #2776ff;
   color: white;
 }
 
@@ -99,7 +101,7 @@ body {
   font-size: 15px;
   border-radius: 6px;
   font-weight: 500;
-  background: #2776FF;
+  background: #2776ff;
   border: none;
 }
 
@@ -118,7 +120,7 @@ body {
 
 .btn-label-primary {
   background: rgba(39, 118, 255, 0.16);
-  color: #2776FF;
+  color: #2776ff;
   font-size: 15px;
   font-weight: 500;
   border-radius: 6px;
@@ -126,7 +128,7 @@ body {
 }
 
 .btn-label-primary:hover {
-  background: #2776FF;
+  background: #2776ff;
   color: #fff;
 }
 
@@ -151,7 +153,7 @@ body {
 }
 
 .tab-btn.active {
-  background: #2776FF;
+  background: #2776ff;
   color: #fff;
 }
 
@@ -167,14 +169,14 @@ body {
 .action-titles {
   font-weight: 500;
   font-size: 18px;
-  color: #2F2B3DE5;
+  color: #2f2b3de5;
 }
 
 .footer-titles {
   font-weight: 400;
   font-size: 15px;
-  color: linear-gradient(0deg, #2B323D, #2B323D),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  color:
+    linear-gradient(0deg, #2b323d, #2b323d), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 
 .donor-filters-bar {
@@ -225,12 +227,14 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .pagination-wrapper .page-btn.active,
 .pagination-wrapper .page-btn:hover {
-  background: #2776FF;
+  background: #2776ff;
   color: #fff;
 }
 
@@ -299,7 +303,7 @@ body {
     margin-bottom: 18px !important;
   }
 
-  .donor-filter-row>[class*="col-"] {
+  .donor-filter-row > [class*='col-'] {
     width: 100% !important;
     max-width: 100% !important;
     margin-bottom: 0 !important;

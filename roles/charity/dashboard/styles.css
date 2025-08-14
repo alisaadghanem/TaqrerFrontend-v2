@@ -1,0 +1,117 @@
+.sar-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.card-svg{
+  width: 32px;
+  height: 32px;
+}
+.progress-thin {
+  height: 6px;
+}
+.entity-bg-danger {
+  background: var(--Color-Palette-error-opacity-light, #ff4c5129);
+}
+.entity-bg-primary {
+  background: #2776ff29;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.card .card-body > .mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.progress.progress-thin {
+  height: 6px;
+  border-radius: 999px;
+}
+.progress-thin .progress-bar {
+  border-radius: 999px;
+}
+
+.donor-dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.donor-dashboard-table th,
+.donor-dashboard-table td {
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.pagination-wrapper {
+  gap: 0.5rem;
+}
+.page-btn {
+  min-width: 36px;
+  height: 36px;
+  border: 1px solid var(--bs-border-color, #e6e8ee);
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0 0.6rem;
+  line-height: 34px;
+  cursor: pointer;
+}
+.page-btn.active {
+  background: var(--bs-primary, #2d6bff);
+  color: #fff;
+  border-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .row.g-3 .card .d-flex.gap-2 {
+    flex-wrap: wrap;
+  }
+  .donor-dashboard-table th,
+  .donor-dashboard-table td {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-header .fw-semibold.text-dark {
+    padding: 0.5rem 0;
+    display: block;
+    padding: 0.9rem 1rem;
+  }
+
+  .m-4.d-flex.justify-content-between.align-items-center {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 8px;
+  }
+  .pagination-wrapper {
+    margin: 0 !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+  }
+  .card .fw-small.fs-6.text-muted {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .row.g-3 .card .fs-4 {
+    font-size: 1.25rem;
+  }
+
+  .card .card-body {
+    padding: 0.9rem 1rem;
+  }
+
+  .page-btn {
+    min-width: 32px;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 0.5rem;
+  }
+}

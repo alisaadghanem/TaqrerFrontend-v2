@@ -1,0 +1,301 @@
+<head>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<div class="mx-auto">
+    <div class="stats-row d-flex flex-column flex-lg-row gap-3 mt-3">
+        <div class="stats-card flex-grow-1 text-start">
+            <div class="stats-label">حجم التبرعات</div>
+            <div class="d-flex align-items-center gap-2 justify-content-start">
+                <span class="stats-value">12,556.56</span>
+                <span>
+                    <img src="../../../../assets/img/svg/riyal-black.svg" />
+                </span>
+                <span class="badge bg-success-subtle text-success">&#x200E;+118%</span>
+            </div>
+        </div>
+
+        <div class="divider d-none d-lg-block"></div>
+
+        <div class="stats-card flex-grow-1 text-start">
+            <div class="stats-label">عدد المشاريع المتبرع لها</div>
+            <div class="d-flex align-items-center gap-2 justify-content-start">
+                <span class="stats-value">12</span>
+                <span class="badge bg-success-subtle text-success">&#x200E;+5</span>
+            </div>
+        </div>
+
+        <div class="divider d-none d-lg-block"></div>
+
+        <div class="stats-card flex-grow-1 text-start">
+            <div class="stats-label">أكثر مجال تبرعا</div>
+            <div class="d-flex align-items-center gap-2 justify-content-start">
+                <span class="stats-desc">كفالة يتيم</span>
+                <span class="badge bg-dark-subtle text-gray">&#x200E;4 مشاريع</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-lg-8">
+            <div class="donor-dashboard-card h-100">
+                <div class="donor-dashboard-card-title d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex flex-column mb-3">
+                            <span class="mb-1">تاريخ التبرعات</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="text-muted">توزيع تبرعاتك آخر ٩ أشهر</span>
+                                <i class="icon-base ti tabler-chart-line icon-md ms-2"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="p-3">
+                    <canvas id="donor-dashboard-chart" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="donor-dashboard-card">
+                <div class="donor-dashboard-card-title d-flex align-items-center">
+                    <div class="d-flex flex-column mb-3">
+                        <span class="mb-1">اهتمامات التبرع</span>
+                        <span class="text-muted">يمكنك تعديل اهتماماتك من هذه الخانة</span>
+                    </div>
+                    <i class="icon-base ti tabler-stars icon-md ms-3"></i>
+                </div>
+                <div id="donor-dashboard-chips" class="donor-dashboard-chips p-3">
+                    <input id="donor-dashboard-chip-input" class="donor-dashboard-chip-input"
+                        placeholder="أدخل اهتماماً جديداً" />
+                </div>
+                <div class="m-2 d-flex flex-wrap gap-2 mt-2">
+                    <span class="badge bg-dark-subtle text-dark d-flex align-items-center">
+                        <button type="button" class="btn btn-sm p-0 border-0 bg-transparent me-1">
+                            <i class="icon-base ti tabler-circle-dashed-x icon-sm"></i>
+                        </button>
+                        كفالة يتيم
+                    </span>
+                    <span class="badge bg-dark-subtle text-dark d-flex align-items-center">
+                        <button type="button" class="btn btn-sm p-0 border-0 bg-transparent me-1">
+                            <i class="icon-base ti tabler-circle-dashed-x icon-sm"></i>
+                        </button>
+                        بناء مساجد
+                    </span>
+                    <span class="badge bg-dark-subtle text-dark d-flex align-items-center">
+                        <button type="button" class="btn btn-sm p-0 border-0 bg-transparent me-1">
+                            <i class="icon-base ti tabler-circle-dashed-x icon-sm"></i>
+                        </button>
+                        سقيا الماء
+                    </span>
+                    <span class="badge bg-dark-subtle text-dark d-flex align-items-center">
+                        <button type="button" class="btn btn-sm p-0 border-0 bg-transparent me-1">
+                            <i class="icon-base ti tabler-circle-dashed-x icon-sm"></i>
+                        </button>
+                        سلال غذائية
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-lg-4">
+            <div class="donor-dashboard-card">
+                <div class="donor-dashboard-card-title d-flex align-items-center">
+                    <div class="d-flex flex-column mb-3">
+                        <span class="mb-1">أثر تبرعاتي</span>
+                        <span class="text-muted">اكتشف الأثر الناتج عن تبرعاتك</span>
+                    </div>
+                    <i class="icon-base ti tabler-heart-handshake icon-md ms-3"></i>
+                </div>
+
+                <div class="donor-dashboard-impact-item justify-content-between">
+                    <div>
+                        <div class="fw-semibold">كفالة 5 أيتام</div>
+                        <div class="text-muted">جمعية الرحمة</div>
+                    </div>
+                    <span>
+                        <i class="icon-base ti tabler-photo icon-md text-primary"></i>
+                        <i class="icon-base ti tabler-video icon-md text-primary"></i>
+                        <i class="icon-base ti tabler-news icon-md text-primary"></i>
+                        <i class="icon-base ti tabler-heart icon-md text-primary"></i>
+                        <i class="icon-base ti tabler-point-filled icon-md text-danger"></i>
+                    </span>
+                </div>
+
+                <div class="donor-dashboard-impact-item justify-content-between">
+                    <div>
+                        <div class="fw-semibold">حفر بئر ماء</div>
+                        <div class="text-muted">جمعية الأمل</div>
+                    </div>
+                    <span>
+                        <i class="icon-base ti tabler-photo icon-md text-secondary"></i>
+                        <i class="icon-base ti tabler-video icon-md text-secondary"></i>
+                        <i class="icon-base ti tabler-news icon-md text-secondary"></i>
+                        <i class="icon-base ti tabler-heart icon-md text-secondary"></i>
+                        <i class="icon-base ti tabler-point-filled icon-md text-secondary"></i>
+                    </span>
+                </div>
+
+                <div class="donor-dashboard-impact-item justify-content-between">
+                    <div>
+                        <div class="fw-semibold">توزيع 120 سلة غذائية</div>
+                        <div class="text-muted">جمعية الخير</div>
+                    </div>
+                    <span>
+                        <i class="icon-base ti tabler-photo icon-md text-secondary"></i>
+                        <i class="icon-base ti tabler-video icon-md text-secondary"></i>
+                        <i class="icon-base ti tabler-news icon-md text-secondary"></i>
+                        <i class="icon-base ti tabler-heart icon-md text-secondary"></i>
+                        <i class="icon-base ti tabler-point-filled icon-md text-secondary"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="donor-dashboard-table-wrap table-responsive">
+                <div
+                    class="donor-dashboard-table-head donor-dashboard-card-title d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <div class="d-flex align-items-center">
+                        <i class="icon-base ti tabler-user-dollar icon-md me-1"></i>
+                        <span>تبرعاتي السابقة</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="btn btn-sm btn-outline-secondary d-flex align-items-center gap-2" type="button">
+                            <i class="icon-base ti tabler-adjustments-alt"></i>
+                            تصفية
+                        </button>
+                        <div class="input-group donor-search-group">
+                            <input class="form-control donor-search" placeholder="بحث عن مشروع أو اسم الجهة" />
+                            <span class="input-group-text bg-white">
+                                <i class="icon-base ti tabler-search icon-sm"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="donor-dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>المشروع</th>
+                            <th>رقم المشروع</th>
+                            <th>تاريخ الإنشاء</th>
+                            <th>المبلغ المستهدف</th>
+                            <th style="width: 110px">عرض المشروع</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dd-table-body">
+                        <tr>
+                            <td>مشروع كفالة يتيم</td>
+                            <td>PRJ-2025-001</td>
+                            <td>2025-07-01</td>
+                            <td>
+                                <span class="d-flex align-items-center justify-content-center gap-1">
+                                    5000
+                                    <span>
+                                        <img src="../../../../assets/img/svg/riyal.svg" alt="ر.س" />
+                                    </span>
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1">
+                                    <i class="icon-base ti tabler-eye icon-sm"></i> عرض
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>بئر ماء في تشاد</td>
+                            <td>PRJ-2025-002</td>
+                            <td>2025-06-15</td>
+                            <td>
+                                <span class="d-flex align-items-center justify-content-center gap-1">
+                                    8500
+                                    <span>
+                                        <img src="../../../../assets/img/svg/riyal.svg" alt="ر.س" />
+                                    </span>
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1">
+                                    <i class="icon-base ti tabler-eye icon-sm"></i> عرض
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>توزيع سلال غذائية</td>
+                            <td>PRJ-2025-003</td>
+                            <td>2025-05-20</td>
+                            <td>
+                                <span class="d-flex align-items-center justify-content-center gap-1">
+                                    3200
+                                    <span>
+                                        <img src="../../../../assets/img/svg/riyal.svg" alt="ر.س" />
+                                    </span>
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1">
+                                    <i class="icon-base ti tabler-eye icon-sm"></i> عرض
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>رعاية مرضى مزمنين</td>
+                            <td>PRJ-2025-004</td>
+                            <td>2025-04-09</td>
+                            <td>
+                                <span class="d-flex align-items-center justify-content-center gap-1">
+                                    12000
+                                    <span>
+                                        <img src="../../../../assets/img/svg/riyal.svg" alt="ر.س" />
+                                    </span>
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1">
+                                    <i class="icon-base ti tabler-eye icon-sm"></i> عرض
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ترميم منازل الأسر</td>
+                            <td>PRJ-2025-005</td>
+                            <td>2025-03-27</td>
+                            <td>
+                                <span class="d-flex align-items-center justify-content-center gap-1">
+                                    15,750
+                                    <span>
+                                        <img src="../../../../assets/img/svg/riyal.svg" alt="ر.س" />
+                                    </span>
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1">
+                                    <i class="icon-base ti tabler-eye icon-sm"></i> عرض
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="m-4 d-flex justify-content-between align-items-center">
+                    <div class="fw-small fs-6 text-muted">عرض من 1 إلى 3 من أصل 100</div>
+                    <div class="pagination-wrapper m-4 d-flex justify-content-center gap-2 flex-wrap mt-5">
+                        <button class="page-btn"><i class="icon-base ti tabler-chevron-right icon-md"></i></button>
+                        <button class="page-btn">1</button>
+                        <button class="page-btn active">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn"><i class="icon-base ti tabler-chevron-left icon-md"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

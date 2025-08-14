@@ -1,0 +1,247 @@
+:root {
+  --dd-border: #e6e8ee;
+  --dd-muted: #98a2b3;
+  --dd-text: #1f2937;
+  --dd-bg: #f7f8fb;
+  --dd-card: #fff;
+  --dd-primary: #2d6bff;
+}
+
+.divider {
+  width: 1px;
+  background: var(--dd-border);
+  margin: 0 4px;
+}
+
+.stats-desc {
+  font-size: 24px;
+  font-weight: 500;
+  color:
+    linear-gradient(0deg, #2b323d, #2b323d), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.donor-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 2fr 1.1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.donor-dashboard-card {
+  background: var(--dd-card);
+  border: 1px solid var(--dd-border);
+  border-radius: 12px;
+  padding: 16px;
+  overflow: visible;
+  box-shadow: 0px 3px 12px 0px #2f2b3d24;
+}
+
+.donor-dashboard-card-title {
+  font-size: 18px;
+  color: #2f2b3de5;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.donor-dashboard-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 1px dashed var(--dd-border);
+  border-radius: 10px;
+  padding: 10px;
+  background: #fbfcff;
+  min-height: 56px;
+}
+
+.donor-dashboard-chip {
+  background: #f1f4ff;
+  border: 1px solid #dde5ff;
+  color: #2740b0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.donor-dashboard-chip button {
+  border: 0;
+  background: transparent;
+  color: #2740b0;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+}
+
+.donor-dashboard-chip-input {
+  min-width: 220px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.donor-dashboard-impact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--dd-border);
+  justify-content: space-between;
+}
+
+.donor-dashboard-impact-item:last-child {
+  border-bottom: 0;
+}
+
+.donor-dashboard-impact-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donor-dashboard-impact-icon.active svg {
+  stroke: var(--dd-primary);
+  fill: transparent;
+}
+
+.donor-dashboard-impact-icon.inactive svg {
+  stroke: #b8bfc9;
+  fill: transparent;
+}
+
+#donor-dashboard-chart {
+  width: 100%;
+  min-height: 280px;
+}
+
+.donor-dashboard-table-wrap {
+  background: var(--dd-card);
+  border: 1px solid var(--dd-border);
+  border-radius: 12px;
+}
+
+.donor-dashboard-table-head {
+  background: var(--dd-card);
+  border-bottom: 1px solid var(--dd-border);
+  padding: 14px 16px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+table.donor-dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.donor-dashboard-table thead th {
+  font-size: 12px;
+  color: var(--dd-muted);
+  font-weight: 500;
+  padding: 12px;
+  border-bottom: 1px solid var(--dd-border);
+  text-align: center;
+  position: relative;
+}
+
+table.donor-dashboard-table tbody td {
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--dd-border);
+  vertical-align: middle;
+  text-align: center;
+}
+
+table.donor-dashboard-table tbody tr:hover {
+  background: #fafbff;
+}
+
+.dd-eye {
+  width: 18px;
+  height: 18px;
+  stroke: #667085;
+}
+
+.donor-dashboard-table thead th + th::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -0.5px;
+  width: 1px;
+  height: 16px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.text-xxs {
+  font-size: 11px;
+}
+
+.minw-260 {
+  min-width: 260px;
+}
+
+@media (max-width: 992px) {
+  .donor-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-row {
+    gap: 12px;
+  }
+  .stats-card {
+    padding: 16px;
+  }
+  #donor-dashboard-chart {
+    min-height: 240px;
+  }
+  .donor-dashboard-table-head {
+    gap: 10px;
+  }
+  .donor-dashboard-table-head .minw-260 {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .donor-dashboard-card {
+    padding: 12px;
+    margin-bottom: 1rem;
+  }
+  .donor-dashboard-chip-input {
+    min-width: 160px;
+  }
+  .donor-dashboard-impact-item {
+    gap: 8px;
+  }
+  .donor-dashboard-impact-item span i.icon-md {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-desc {
+    font-size: 16px;
+  }
+  #donor-dashboard-chart {
+    min-height: 200px;
+  }
+  .page-btn {
+    flex: 1 1 auto;
+    min-width: 40px;
+  }
+  .icon-base.icon-md {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .donor-dashboard-chip-input {
+    min-width: 120px;
+  }
+}
