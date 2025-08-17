@@ -366,3 +366,124 @@
     </footer>
   </div>
 </div>
+
+<!-- Modal: Payment, To open the modal please change d-none -> d-block in the first div -->
+<div class="modal show d-none modal-bg" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center border-0 position-relative">
+        <h5 class="modal-title fw-bold">تبرع بالمشروع</h5>
+        <button type="button" class="btn-close position-absolute" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body pt-0">
+        <form id="donateForm">
+          <div class="mb-2 small text-muted">تبرعات مقترحة</div>
+          <div class="d-flex gap-2 mb-3 flex-nowrap">
+            <button
+              type="button"
+              class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center gap-1">
+              10
+              <img class="sar-icon" src="../../../../assets/img/svg/riyal-black.svg" alt="SAR" />
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center gap-1">
+              50
+              <img class="sar-icon" src="../../../../assets/img/svg/riyal-black.svg" alt="SAR" />
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline-primary flex-fill d-flex align-items-center justify-content-center gap-1">
+              100
+              <img class="sar-icon" src="../../../../assets/img/svg/riyal.svg" alt="SAR" />
+            </button>
+          </div>
+
+          <div class="mb-4">
+            <div class="small text-muted mb-2">تبرع اختياري</div>
+            <div class="input-group">
+              <input type="number" min="0" step="0.01" class="form-control" placeholder="0.00" />
+              <span class="input-group-text bg-white">
+                <img class="sar-icon" src="../../../../assets/img/svg/riyal-black.svg" alt="SAR" />
+              </span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">أضف رقم الهاتف</label>
+            <input type="tel" class="form-control" placeholder="+966-5999999" />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">أضف بطاقة جديدة</label>
+
+            <div class="mb-2">
+              <label class="form-label small text-gray">اسم صاحب الحساب</label>
+              <input type="text" class="form-control" placeholder="أدخل اسم صاحب الحساب" />
+            </div>
+
+            <div class="mb-2">
+              <label class="form-label small text-gray">رقم البطاقة</label>
+              <input type="text" class="form-control" placeholder="0000 0000 0000 0000" />
+            </div>
+
+            <div class="row g-2">
+              <div class="col">
+                <label class="form-label small text-gray">CVC</label>
+                <input type="text" class="form-control" placeholder="123" />
+              </div>
+              <div class="col">
+                <label class="form-label small text-gray">تاريخ الانتهاء</label>
+                <input type="text" class="form-control" placeholder="12/30" />
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-3 small">
+            يمكنك الدفع عن طريق:
+            <div class="mt-2 d-flex justify-content-center gap-3">
+              <img src="../../../../assets/img/svg/mada.svg" alt="Mada" width="40" />
+              <img src="../../../../assets/img/svg/apple-pay.svg" alt="Apple Pay" width="40" />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer justify-content-center border-0">
+        <button type="button" class="btn btn-outline-secondary">إلغاء</button>
+        <button type="submit" form="donateForm" class="btn btn-primary">تأكيد التبرع</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Error toaster, To open the modal please change d-none -> d-block in the first div -->
+<div class="position-fixed top-0 start-50 translate-middle-x p-3 d-none" style="z-index: 1080">
+  <div
+    class="toast show bg-white border-0 rounded-3 shadow-sm px-3 py-2"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true">
+    <div class="d-flex align-items-center justify-content-center gap-2">
+      <img src="../../../../assets/img/svg/error.svg" alt="error">
+      <div class="toast-body p-0 text-center text-black fw-medium fs-6">فشل التبرع، يرجى المحاولة مرة أخرى.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Success toaster, To open the modal please change d-none -> d-block in the first div -->
+<div class="position-fixed top-0 start-50 translate-middle-x p-3 d-none" style="z-index: 1080">
+  <div
+    class="toast show bg-white border-0 rounded-3 shadow-sm px-3 py-2"
+    role="alert"
+    aria-live="polite"
+    aria-atomic="true">
+    <div class="d-flex align-items-center justify-content-center gap-2">
+      <img src="../../../../assets/img/svg/success.svg" alt="success">
+      <div class="toast-body p-0 text-center text-black fw-medium fs-6">شكرًا لتبرعك في مشروع (اسم المشروع)!</div>
+    </div>
+  </div>
+</div>

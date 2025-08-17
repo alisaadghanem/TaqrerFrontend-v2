@@ -1,0 +1,32 @@
+.col-check {
+  width: 48px;
+}
+.col-category {
+  width: 140px;
+}
+.col-status {
+  width: 120px;
+}
+.col-actions {
+  width: 110px;
+}
+
+.badge {
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.star-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+}
+
+.modal-bg {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.modal-img {
+  width: 120px;
+  height: 120px;
+}

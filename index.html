@@ -59,6 +59,8 @@
     <link rel="stylesheet" href="roles/donor/projects/view-projects/styles.css" />
     <link rel="stylesheet" href="roles/donor/projects/discover-projects/styles.css" />
     <link rel="stylesheet" href="roles/donor/dashboard/styles.css" />
+    
+    <link rel="stylesheet" href="roles/system-admin/badges/styles.css" />
 
     <!-- endbuild -->
 
@@ -289,27 +291,65 @@
                         <div>اكتشف المشاريع</div>
                       </a>
                     </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <a
+                href="#"
+                class="menu-link menu-toggle"
+                data-bs-toggle="collapse"
+                data-bs-target="#charityMenu"
+                aria-expanded="false">
+                <i class="menu-icon icon-base ti tabler-users-group"></i>
+                <div>مسئول النظام</div>
+                <span class="caret"></span>
+              </a>
+               <ul class="menu-sub collapse" id="donorMenu">
+                <li class="menu-item menu-dropdown">
+                  <a
+                    href="#"
+                    class="menu-link menu-toggle"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#projectsMenu"
+                    aria-expanded="false">
+                    <i class="menu-icon icon-base ti tabler-settings"></i>
+                    <div>الإعدادات العامة</div>
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="menu-sub collapse" id="projectsMenu">
                     <li class="menu-item">
                       <a
                         href="#"
                         class="menu-link"
-                        onclick="loadPage('roles/charity/projects/active-projects/active-projects.html'); return false;">
-                        <i class="menu-icon icon-base ti tabler-bolt"></i>
-                        <div>المشاريع النشطة</div>
+                        onclick="loadPage('roles/system-admin/badges/badges.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-badges"></i>
+                        <div>الأوسمة والمكافئات</div>
                       </a>
                     </li>
                     <li class="menu-item">
                       <a
                         href="#"
                         class="menu-link"
-                        onclick="loadPage('roles/charity/projects/draft-projects/draft-projects.html'); return false;">
-                        <i class="menu-icon icon-base ti tabler-file-pencil"></i>
-                        <div>المشاريع المسودة</div>
+                        onclick="loadPage('roles/system-admin/project-categories/project-categories.html'); return false;">
+                        <i class="menu-icon icon-base ti tabler-category-2"></i>
+                        <div>فئات المشاريع</div>
                       </a>
                     </li>
                   </ul>
                 </li>
               </ul>
+              <!-- <ul class="menu-sub collapse" id="donorMenu">
+                <li class="menu-item">
+                  <a
+                    href="#"
+                    class="menu-link"
+                    onclick="loadPage('roles/system-admin/badges/badges.html'); return false;">
+                    <i class="menu-icon icon-base ti tabler-badges"></i>
+                    <div>الأوسمة والمكافأت</div>
+                  </a>
+              </ul> -->
             </li>
           </ul>
         </aside>
